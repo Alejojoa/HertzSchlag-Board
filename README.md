@@ -10,3 +10,7 @@ The HertzSchlag is a PCB designed for Mini Sumo Robots.
 - XT30 connector
 - On/Off switch
 - M2 mounting holes for secure mounting
+
+
+## Highly Inspired By Tenn Board From DENJU DIVISION :
+https://github.com/DENJU-DIVISION/Tenn-PCB/tree/main
