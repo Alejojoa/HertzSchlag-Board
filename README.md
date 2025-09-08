@@ -1,5 +1,5 @@
 # HertzSchlag - Mini Sumo Board
-The HertzSchlag is a PCB designed for Mini Sumo Robots.\
+The HertzSchlag is a PCB designed for Mini Sumo Robots.
 
 ## Features :
 - Dedicated Servo Pin with PWM control
