@@ -4803,6 +4803,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 54.61) (xy 25.4 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a0e654-90d4-4980-b028-a8e994af3253")
+	)
+	(wire
+		(pts
 			(xy 78.74 31.75) (xy 93.98 31.75)
 		)
 		(stroke
@@ -4923,6 +4933,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 46.99) (xy 25.4 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a1b35e-080b-4aad-b993-a5fa3c6f621f")
+	)
+	(wire
+		(pts
 			(xy 157.48 41.91) (xy 157.48 43.18)
 		)
 		(stroke
@@ -4990,6 +5010,16 @@
 			(type default)
 		)
 		(uuid "27a90ca0-d153-4f08-86de-af3ec8475f75")
+	)
+	(wire
+		(pts
+			(xy 22.86 54.61) (xy 25.4 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27d477b1-96bd-4eee-9848-5039529f2b99")
 	)
 	(wire
 		(pts
@@ -5480,6 +5510,16 @@
 			(type default)
 		)
 		(uuid "9e91e8b7-dd5d-441e-bfac-87ab07625ed5")
+	)
+	(wire
+		(pts
+			(xy 22.86 52.07) (xy 25.4 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a15a45-19d8-40eb-a7c3-0f541dee5eb0")
 	)
 	(wire
 		(pts
@@ -18106,6 +18146,16 @@
 		)
 		(uuid "d0e02683-ecd4-47b0-85b0-8ad56e233427")
 	)
+	(label "VM"
+		(at 25.4 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "daab1549-eb0b-4867-b336-ec6ac8fa5ed4")
+	)
 	(label "SDA"
 		(at 260.35 73.66 0)
 		(effects
@@ -21362,6 +21412,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 25.4 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0f37596-f409-43be-8fc6-a38566a32f9e")
+		(property "Reference" "#PWR018"
+			(at 25.4 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03b41747-72df-467c-b440-685feb886f80")
+		)
+		(instances
+			(project "hertzschlag"
+				(path "/f154c6d1-45a5-4a23-92c8-ac7beedeed65"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 34.29 104.14 90)
 		(unit 1)
@@ -21498,7 +21613,6 @@
 	(symbol
 		(lib_id "EESTN5:TB_1X2")
 		(at 19.05 34.29 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21506,7 +21620,7 @@
 		(dnp no)
 		(uuid "a94e8d2a-e964-46d6-8554-9c3e61fae6ed")
 		(property "Reference" "J1"
-			(at 20.32 44.45 0)
+			(at 20.32 24.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21514,15 +21628,15 @@
 			)
 		)
 		(property "Value" "TB_1X2"
-			(at 20.32 41.91 0)
+			(at 20.32 26.67 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
-			(at 20.32 47.244 0)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+			(at 20.32 21.336 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21531,7 +21645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 35.56 0)
+			(at 17.78 33.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22169,6 +22283,74 @@
 			(project "MiniSumo_Nano"
 				(path "/f154c6d1-45a5-4a23-92c8-ac7beedeed65"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 17.78 54.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc219dc5-2fb3-432e-8f0b-1fe9b06b4b34")
+		(property "Reference" "J8"
+			(at 17.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Extra"
+			(at 17.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ccae24b-d113-4498-b90c-733ee106f70a")
+		)
+		(pin "2"
+			(uuid "52c78ee6-6fa0-40dc-96f8-2dc578c2d1b0")
+		)
+		(instances
+			(project ""
+				(path "/f154c6d1-45a5-4a23-92c8-ac7beedeed65"
+					(reference "J8")
 					(unit 1)
 				)
 			)
